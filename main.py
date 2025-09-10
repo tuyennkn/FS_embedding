@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 
 # Load model đa ngôn ngữ (cache sẵn để không reload mỗi request)
-model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+model = SentenceTransformer("intfloat/multilingual-e5-large")
 
 app = FastAPI()
 
