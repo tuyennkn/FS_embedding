@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 
-# Load model đa ngôn ngữ (cache sẵn để không reload mỗi request)
 model = SentenceTransformer("intfloat/multilingual-e5-large")
 
 app = FastAPI()
